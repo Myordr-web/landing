@@ -2,8 +2,8 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>MyOrdr - Find. Share. Order.</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>MyOrdr - Join the Waitlist</title>
   <style>
     body {
       background-color: #FFF9F1;
@@ -88,5 +88,14 @@
   <footer>
     © 2025 MyOrdr LLC — App coming soon
   </footer>
+
+  <script>
+    window.addEventListener("DOMContentLoaded", function () {
+      const form = document.querySelector("form");
+      form.addEventListener("submit", function () {
+        form.innerHTML = "<p>Thanks! You’re on the list. 🎉</p>";
+      });
+    });
+  </script>
 </body>
 </html>
