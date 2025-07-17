@@ -3,115 +3,90 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-  <title>Myordr - Share Your Orders</title>
-  <meta name="apple-itunes-app" content="app-id=YOUR_APP_ID">
+  <title>MyOrdr - Find. Share. Order.</title>
   <style>
-    * {
-      margin: 0;
-      padding: 0;
-      box-sizing: border-box;
-    }
-
     body {
+      background-color: #FFF9F1;
       font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
-      background-color: #FFFFFF;
-      color: #000000;
-      min-height: 100vh;
       display: flex;
+      flex-direction: column;
       align-items: center;
       justify-content: center;
-      flex-direction: column;
       padding: 40px 20px;
+      min-height: 100vh;
       text-align: center;
+      color: #1c1c1c;
     }
 
-    .logo {
-      max-width: 280px;
-      height: auto;
+    img.logo {
+      max-width: 200px;
       margin-bottom: 30px;
     }
 
-    .title {
-      font-size: 32px;
-      font-weight: bold;
-      margin-bottom: 15px;
+    h1 {
+      font-size: 36px;
+      font-weight: 800;
+      margin-bottom: 10px;
     }
 
-    .subtitle {
-      font-size: 17px;
-      color: #444;
+    p.subtitle {
+      font-size: 18px;
+      max-width: 480px;
       margin-bottom: 30px;
-      max-width: 420px;
-    }
-
-    .features {
-      display: grid;
-      grid-template-columns: 1fr 1fr;
-      gap: 20px;
-      margin: 30px 0;
-      max-width: 500px;
-    }
-
-    .feature {
-      background-color: #F5F5F5;
-      padding: 16px;
-      border-radius: 10px;
-      font-size: 15px;
-      color: #333;
-      font-weight: 500;
     }
 
     form {
       display: flex;
       flex-direction: column;
       align-items: center;
-      margin-top: 20px;
+      gap: 16px;
+      width: 100%;
+      max-width: 400px;
     }
 
     input[type="email"] {
-      padding: 12px;
-      border: 1px solid #ccc;
-      border-radius: 8px;
+      padding: 14px;
+      width: 100%;
       font-size: 16px;
-      width: 250px;
-      margin-bottom: 15px;
+      border-radius: 10px;
+      border: 1px solid #ccc;
     }
 
     button {
-      background-color: #3A6B6B;
+      padding: 14px 24px;
+      font-size: 16px;
+      background-color: #1D6FDF;
       color: white;
-      padding: 14px 28px;
       border: none;
       border-radius: 10px;
-      font-size: 16px;
       font-weight: 600;
       cursor: pointer;
       transition: background-color 0.3s ease;
     }
 
     button:hover {
-      background-color: #2d5555;
+      background-color: #125cc4;
+    }
+
+    footer {
+      margin-top: 40px;
+      font-size: 14px;
+      color: #777;
     }
   </style>
 </head>
 <body>
-  <img src="Myordr_logo.png" alt="Myordr Logo" class="logo" />
+  <img src="Myordr_logo.png" alt="MyOrdr Logo" class="logo" />
+  <h1>Find. Share. Order.</h1>
+  <p class="subtitle">The social feed for food lovers. Discover what real people actually order — and never guess again.</p>
 
-  <div class="title">Welcome to Myordr</div>
-  <div class="subtitle">
-    Share your go-to food orders and get your friends' orders right every time.
-  </div>
-
-  <div class="features">
-    <div class="feature">Save your favorite orders</div>
-    <div class="feature">Browse your friends’ go-to meals</div>
-    <div class="feature">Send and receive gift orders</div>
-    <div class="feature">Never forget someone’s usual again</div>
-  </div>
-
-  <form action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
-    <input type="email" name="email" placeholder="Enter your email" required />
-    <button type="submit">Join the Waitlist</button>
+  <form action="https://formspree.io/f/mzzvzdnz" method="POST">
+    <input type="email" name="email" placeholder="Enter your email to join the waitlist" required />
+    <button type="submit">Notify Me</button>
   </form>
+
+  <footer>
+    © 2025 MyOrdr LLC — App coming soon
+  </footer>
 </body>
 </html>
